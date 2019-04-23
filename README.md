@@ -4,6 +4,15 @@
 ### Description
 Task management UI built using [Component Driven Development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07)
 
-<img src="public/images/tasklist.png" width="500">
+UI            |  Storybook
+------------- | -------------
+<img src="public/images/tasklist.png" width="500"> | <img src="public/images/storybook.png" width="500">
 
-Based on the tutorial from [Learn Storybook](https://www.learnstorybook.com/)
+### UI Component Testing
+* Visual tests 
+* Snapshot tests with Storyshots
+* Unit tests with Jest
+* Regression Testing with [Chromatic](https://www.chromaticqa.com/)
+
+### Resources
+tutorial from [Learn Storybook](https://www.learnstorybook.com/)
