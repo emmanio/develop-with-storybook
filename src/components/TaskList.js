@@ -5,6 +5,18 @@ import Task from './Task'
 import { connect } from 'react-redux'
 import { archiveTask, pinTask } from '../lib/redux'
 
+
+TaskList.propTypes = {
+    loading: PropTypes.bool,
+    tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
+    onPinTask: PropTypes.func.isRequired,
+    onArchiveTask: PropTypes.func.isRequired,
+}
+
+TaskList.defaultProps = {
+    loading: false,
+}
+
 export function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
     const events = {
         onPinTask,
@@ -55,17 +67,6 @@ export function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
             {tasksInOrder.map(task => <Task key={task.id} task={task} {...events} />)}
         </div>
     );
-}
-
-TaskList.propTypes = {
-    loading: PropTypes.bool,
-    tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
-    onPinTask: PropTypes.func.isRequired,
-    onArchiveTask: PropTypes.func.isRequired,
-}
-
-TaskList.defaultProps = {
-    loading: false,
 }
 
 export default connect(
