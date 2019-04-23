@@ -17,4 +17,4 @@ UI            |  Storybook
 * Regression Testing with [Chromatic](https://www.chromaticqa.com/)
 
 ### Resources
->_tutorial from [Learn Storybook](https://www.learnstorybook.com/)_
+tutorial from [Learn Storybook](https://www.learnstorybook.com/)
