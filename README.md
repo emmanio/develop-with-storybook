@@ -1,8 +1,10 @@
 
 # Storybook Driven Development
 
-### Description
 >_Task management UI built using [Component Driven Development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07)_
+
+-----------------
+
 
 UI            |  Storybook
 ------------- | -------------
